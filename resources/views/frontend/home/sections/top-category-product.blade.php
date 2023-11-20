@@ -9,7 +9,7 @@
                 @if ($homepage_secion_banner_one->banner_one->status == 1)
                 <div class="wsus__monthly_top_banner">
                     <a href="{{$homepage_secion_banner_one->banner_one->banner_url}}">
-                        <img class="img-fluid" src="{{asset($homepage_secion_banner_one->banner_one->banner_image)}}" alt="">
+                        <img width="100%" class="img-fluid" src="{{asset($homepage_secion_banner_one->banner_one->banner_image)}}" alt="">
                     </a>
                 </div>
                 @endif
@@ -69,7 +69,7 @@
                             <div class="col-xl-2 col-6 col-sm-6 col-md-4 col-lg-3  category-{{$key}}">
                                 <a class="wsus__hot_deals__single" href="{{route('product-detail', $item->slug)}}">
                                     <div class="wsus__hot_deals__single_img">
-                                        <img src="{{asset($item->thumb_image)}}" alt="bag" class="img-fluid w-100">
+                                        <img width="100%" src="{{asset($item->thumb_image)}}" alt="bag" class="img-fluid w-100">
                                     </div>
                                     <div class="wsus__hot_deals__single_text">
                                         <h5>{!!limitText($item->name, )!!}</h5>
